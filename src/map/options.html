@@ -140,7 +140,7 @@
                     </div>
                 </div>
 
-                <div style="margin-bottom: 1.5em;"></div>
+                <div style="margin-bottom: 1.5em"></div>
                 <h5 class="chsp-settings-section-title">Style</h5>
                 <div class="chsp-map-options">
                     <div class="input-group input-group-sm">
@@ -213,14 +213,14 @@
                             <div class="input-group-prepend">
                                 <label class="input-group-text" for="chsp-opacity-minimum">min:</label>
                             </div>
-                            <input id="chsp-opacity-minimum" min="0" max="1" class="form-control custom-range" type="number" step="any" />
+                            <input id="chsp-opacity-minimum" min="0" max="1" step="0.05" class="form-control custom-range" type="number" step="any" />
                         </div>
 
                         <div class="input-group input-group-sm">
                             <div class="input-group-prepend">
                                 <label class="input-group-text" for="chsp-opacity-maximum">max:</label>
                             </div>
-                            <input id="chsp-opacity-maximum" min="0" max="1" class="form-control custom-range" type="number" step="any" />
+                            <input id="chsp-opacity-maximum" min="0" max="1" step="0.05" class="form-control custom-range" type="number" step="any" />
                         </div>
                         <div class="custom-switch">
                             <input class="custom-control-input" id="chsp-opacity-greyed" type="checkbox" disabled checked />
@@ -230,7 +230,7 @@
                             <div class="input-group-prepend">
                                 <label class="input-group-text" for="chsp-opacity-property">property:</label>
                             </div>
-                            <select id="chsp-opacity-property" class="custom-select" disabled> </select>
+                            <select id="chsp-opacity-property" class="custom-select" disabled></select>
                         </div>
                         <div class="input-group input-group-sm">
                             <select id="chsp-opacity-operator" class="custom-select" disabled>
@@ -265,7 +265,7 @@
                         more options
                     </button>
 
-                    <div class="collapse chsp-map-extra-options" id="chsp-extra-size" style="grid-template-columns: 1fr 1fr;">
+                    <div class="collapse chsp-map-extra-options" id="chsp-extra-size" style="grid-template-columns: 1fr 1fr">
                         <div class="input-group input-group-sm">
                             <div class="input-group-prepend">
                                 <label class="input-group-text" for="chsp-size">property:</label>
@@ -276,7 +276,7 @@
                             <input class="custom-control-input" id="chsp-size-reverse" type="checkbox" disabled />
                             <label class="custom-control-label" for="chsp-size-reverse" title="reverse sizes">reverse sizes</label>
                         </div>
-                        <div class="input-group input-group-sm" style="grid-column: auto / span 2;">
+                        <div class="input-group input-group-sm" style="grid-column: auto / span 2">
                             <div class="input-group-prepend">
                                 <label class="input-group-text" for="chsp-size-factor">factor:</label>
                             </div>

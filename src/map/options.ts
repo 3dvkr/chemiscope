@@ -10,7 +10,7 @@ import { optionValidator } from '../options';
 import { PositioningCallback, arrayMaxMin, getByID, makeDraggable, sendWarning } from '../utils';
 import { NumericProperties, NumericProperty } from './data';
 
-import { getColorMap, getFilteredColorMap } from './colorscales';
+import { getColorMap } from './colorscales';
 
 import { COLOR_MAPS } from './colorscales';
 import BARS_SVG from '../static/bars.svg';
@@ -487,13 +487,6 @@ export class MapOptions extends OptionsGroup {
 
     /** Get the colorscale to use for markers in the main plotly trace */
     public colorScale(): Plotly.ColorScale {
-        const opacity = [this.opacity.minimum.value, this.opacity.maximum.value] as number[];
-        const withColors = [this.opacity.enableColors.value, true] as boolean[];
-        return getFilteredColorMap(this.palette.value, opacity, withColors);
-    }
-
-    /** Get the colorscale to use for markers in the main plotly trace */
-    public colorBarScale(): Plotly.ColorScale {
         return getColorMap(this.palette.value);
     }
 }
